@@ -1,6 +1,6 @@
 /*
 Lista de Exercícios I - Questão #03
-Yuri Thomaz dos Santos Carvalho - 202410520
+Yuri Thomaz dos Santos Carvalho
 */
 
 /*
