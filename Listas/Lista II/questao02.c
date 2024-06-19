@@ -1,0 +1,56 @@
+/*
+Lista II - Questão #02
+Yuri Thomaz dos Santos Carvalho - 202410520
+*/
+
+/*
+Crie um programa qual entre com argumentos e desenvolva funções que:
+
+➢ Transforme Celsius e Farenheit a depender da escolha;
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void paraFarenheit(float temperatura);
+void paraCelsius(float temperatura);
+
+int main(int argc, char *argv[]) {
+
+  int conversor = atoi(argv[1]);
+  float temperatura = atof(argv[2]);
+
+  switch ( conversor ) {
+
+    case 1:
+
+      paraFarenheit(temperatura);
+
+    break;
+
+    case 2:
+
+      paraCelsius(temperatura);
+
+    break;
+
+  }
+
+  return 0;
+
+}
+void paraFarenheit(float temperatura) {
+
+  float conversao = ((temperatura * 9.0/5.0) + 32.0);
+
+  printf("\n%g °C = %g °F\n\n", temperatura, conversao);
+
+}
+
+void paraCelsius(float temperatura) {
+
+  float conversao = ((temperatura - 32.0) * 5.0/9.0);
+
+  printf("\n%g °F = %g °C\n\n", temperatura, conversao);
+
+}
