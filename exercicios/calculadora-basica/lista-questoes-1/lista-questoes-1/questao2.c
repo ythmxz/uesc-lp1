@@ -1,5 +1,5 @@
 /*
-Yuri Thomaz dos Santos Carvalho - 202410520
+Yuri Thomaz dos Santos Carvalho
 Lista de Questões 1 - Questão 2
 */
 
