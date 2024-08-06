@@ -6,16 +6,16 @@ Lista I - Início
 #include <stdio.h>
 #include <math.h>
 
-int questao1();
-int questao2();
-int questao3();
-int questao4();
-int questao5();
-int questao6();
-int questao7();
-int questao8();
-int questao9();
-int questao10();
+void questao01();
+void questao02();
+void questao03();
+void questao04();
+void questao05();
+void questao06();
+void questao07();
+void questao08();
+void questao09();
+void questao10();
 
 int main() {
 
@@ -45,55 +45,55 @@ int main() {
 
         case 1:
 
-            questao1();
+            questao01();
 
             break;
 
         case 2:
 
-            questao2();
+            questao02();
 
             break;
 
         case 3:
 
-            questao3();
+            questao03();
 
             break;
 
         case 4:
 
-            questao4();
+            questao04();
 
             break;
 
         case 5:
 
-            questao5();
+            questao05();
 
             break;
 
         case 6:
 
-            questao6();
+            questao06();
 
             break;
 
         case 7:
 
-            questao7();
+            questao07();
 
             break;
 
         case 8:
 
-            questao8();
+            questao08();
 
             break;
 
         case 9:
 
-            questao9();
+            questao09();
 
             break;
 
@@ -110,7 +110,7 @@ int main() {
 }
 
 
-int questao1() {
+void questao01() {
 
     /*
     Defina, descreva e explique:
@@ -143,12 +143,10 @@ int questao1() {
            "alguma ação ou resolver algum problema. Normalmente eles são sequenciais, organizados "
            "e sistematizados e não existem apenas no mundo digital.\n");
 
-    return 0;
-
 }
 
 
-int questao2() {
+void questao02() {
 
     /*
     Escreva um programa que:
@@ -206,12 +204,10 @@ int questao2() {
     printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %x \nCaractere: %c\n"
            , minusculo, minusculo, minusculo, minusculo);
 
-	return 0;
-
 }
 
 
-int questao3() {
+void questao03() {
 
     /*
     Escreva um programa, usando quando necessário o operador (?), que:
@@ -285,12 +281,10 @@ int questao3() {
     else
         printf("\n(A divisão não é exata).\n");
 
-  return 0;
-
 }
 
 
-int questao4() {
+void questao04() {
 
     /*
     Escreva um programa, usando quando necessário o operador (?), que:
@@ -323,12 +317,10 @@ int questao4() {
 
 	printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %x \nCaractere: %c\n", numero, numero, numero, numero);
 
-	return 0;
-
 }
 
 
-int questao5() {
+void questao05() {
 
     /*
     Escreva um programa que peça ao usuário para fornecer um número inteiro, obtenha-o da entrada padrão, usando
@@ -354,12 +346,10 @@ int questao5() {
 
 	printf("\nAlgo deu errado! Tente novamente.\n");
 
-	return 0;
-
 }
 
 
-int questao6() {
+void questao06() {
 
     /*
     Escreva um programa que peça ao usuário para fornecer um número inteiro longo sem sinal, obtenha-o da entrada
@@ -382,12 +372,10 @@ int questao6() {
 
     printf("\nAlgo deu errado! Tente novamente.\n");
 
-	return 0;
-
 }
 
 
-int questao7() {
+void questao07() {
 
     /*
     Escreva um programa que leia um número inteiro e, utilizando o operador %, converta ele num valor entre 1 e 6.
@@ -404,12 +392,10 @@ int questao7() {
 
   printf("\nO resultado é %d\n", numero);
 
-  return 0;
-
 }
 
 
-int questao8() {
+void questao08() {
 
     /*
     Escreva um programa que leia um número inteiro positivo e retorne o valor da soma de todos os números inteiros
@@ -438,12 +424,10 @@ int questao8() {
 
   printf("\nO resultado da soma de todos os valores de 1 até %d é %g.\n", numeroPositivo, resultadoSoma);
 
-  return 0;
-
 }
 
 
-int questao9() {
+void questao09() {
 
     /*
     Escreva um programa que:
@@ -495,12 +479,10 @@ int questao9() {
 
 	printf("\nO produto entre os pontos %g e %g equivale a %e.\n", pontoX, pontoY, pontoZ);
 
-	return 0;
-
 }
 
 
-int questao10() {
+void questao10() {
 
     /*
     Escreva um programa que leia da entrada padrão o lado de um quadrado e imprima:
@@ -528,7 +510,5 @@ int questao10() {
 	area = (pow(lado, 2));
 
 	printf("\nA área deste quadrado equivale a %g m².\n", area);
-
-	return 0;
 
 }
