@@ -18,10 +18,10 @@ int main() {
     printf("\nOperação: ");
     scanf("%d", &operacao);
 
-    printf("\nDigite o primeiro valor: ");
+    printf("\nDigite o primeiro valor (inteiro): ");
     scanf("%d", &valorA);
 
-    printf("\nDigite o segundo valor: ");
+    printf("\nDigite o segundo valor (inteiro): ");
     scanf("%d", &valorB);
 
     if ( operacao == 1 ) {
@@ -47,17 +47,17 @@ int main() {
 
     if ( operacao == 4 ) {
 
-        resto = valorA % valorB;
 
         if ( valorB == 0 ) {
 
-            printf("\nNão é possível dividir por 0!");
+            printf("\nNão é possível dividir por 0!\n");
 
             return 1;
 
         }
 
         resultado = valorA / valorB;
+        resto = valorA % valorB;
 
 
         printf("\n%d / %d = %d \nResto = %d\n", valorA, valorB, resultado, resto);

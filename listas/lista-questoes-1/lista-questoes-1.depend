@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1722974419 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\main.c
+	<stdio.h>
+
+1722974320 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao1.c
+	<stdio.h>
+
+1722974324 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao2.c
+	<stdio.h>
+
+1722974074 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao10.c
+	<stdio.h>
+	<math.h>
+
+1722974329 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao3.c
+	<stdio.h>
+
+1722974335 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao4.c
+	<stdio.h>
+
+1722974342 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao5.c
+	<stdio.h>
+
+1722974347 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao6.c
+	<stdio.h>
+
+1722974351 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao7.c
+	<stdio.h>
+
+1722974355 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao8.c
+	<stdio.h>
+
+1722974359 source:d:\yuri thomaz\documents\github\uesc-lp1\exercicios\calculadora-basica\lista-questoes-1\lista-questoes-1\questao9.c
+	<stdio.h>
+	<math.h>
+

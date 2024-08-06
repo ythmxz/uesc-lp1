@@ -1,5 +1,5 @@
 /*
-Yuri Thomaz dos Santos Carvalho - 202410520
+Yuri Thomaz dos Santos Carvalho
 Exercício - Calculadora Básica
 */
 
@@ -18,10 +18,10 @@ int main() {
     printf("\nOperação: ");
     scanf("%d", &operacao);
 
-    printf("\nDigite o primeiro valor: ");
+    printf("\nDigite o primeiro valor (inteiro): ");
     scanf("%d", &valorA);
 
-    printf("\nDigite o segundo valor: ");
+    printf("\nDigite o segundo valor (inteiro): ");
     scanf("%d", &valorB);
 
     if ( operacao == 1 ) {
