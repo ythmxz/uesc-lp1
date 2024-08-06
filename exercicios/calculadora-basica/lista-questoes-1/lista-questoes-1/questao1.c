@@ -1,6 +1,6 @@
 /*
 Yuri Thomaz dos Santos Carvalho
-Lista de Questões 1 - Questão 1
+Lista I - Questão 01
 */
 
 /*

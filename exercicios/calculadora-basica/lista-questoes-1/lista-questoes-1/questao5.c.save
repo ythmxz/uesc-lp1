@@ -1,6 +1,6 @@
 /*
 Yuri Thomaz dos Santos Carvalho
-Lista de Questões 1 - Questão 5
+Lista I - Questão 5
 */
 
 /*
@@ -13,7 +13,7 @@ intervalo dos short int”. Use apenas o operador condicional (?).
 
 #include <stdio.h>
 
-int main() {
+int questao5() {
 
 	int numero = 0;
 
@@ -29,7 +29,7 @@ int main() {
 	( numero > 32767 ) ?
 		printf("\nEste valor é maior que um short int.\n") :
 
-	printf("\n\nAlgo deu errado! Tente novamente.");
+	printf("\nAlgo deu errado! Tente novamente.\n");
 
 	return 0;
 

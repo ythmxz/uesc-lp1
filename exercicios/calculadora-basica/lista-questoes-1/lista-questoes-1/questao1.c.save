@@ -1,6 +1,6 @@
 /*
-Yuri Thomaz dos Santos Carvalho - 202410520
-Lista de Questões 1 - Questão 1
+Yuri Thomaz dos Santos Carvalho
+Lista I - Questão 01
 */
 
 /*
@@ -15,11 +15,12 @@ e) Algoritmos e suas características;
 
 #include <stdio.h>
 
-int questao1() {
+int questao01() {
 
     printf("\na) Uma linguagem de programação é um conjunto de regras sintáticas, "
            "semânticas e comandos que permitem ao programador especificar as ações "
            "que o computador deverá realizar.\n");
+
     printf("\nb) As linguagens de Programação se diversificaram bastante ao longo do tempo e "
            "seguiram por diversos caminhos diferentes, podendo ser classificadas por seu paradigma, "
            "sua estrutura de tipos, sua plataforma de desenvolvimento, entre outros fatores.\n");

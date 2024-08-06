@@ -1,6 +1,6 @@
 /*
-Yuri Thomaz dos Santos Carvalho - 202410520
-Lista de Questões 1 - Questão 2
+Yuri Thomaz dos Santos Carvalho
+Lista I - Questão 02
 */
 
 /*
@@ -29,7 +29,7 @@ formato numérico decimal, octal, hexadecimal e como caractere.
 
 #include <stdio.h>
 
-int questao2() {
+int questao02() {
 
     char caractere;
     char maiusculo = 81, minusculo;
@@ -52,8 +52,6 @@ int questao2() {
 		printf("\nEste caractere é um dígito.\n") :
 
 	printf("\nEste caractere não é uma letra nem um dígito.\n");
-
-	printf("\n--------------------------------------------------\n");
 
 	printf("\nCaractere 81 (maiúsculo):\n");
     printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %X \nCaractere: %c\n"
