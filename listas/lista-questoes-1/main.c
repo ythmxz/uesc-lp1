@@ -31,7 +31,7 @@ int main() {
     printf("\nQuestão 01: 1 \nQuestão 02: 2 \nQuestão 03: 3 \nQuestão 04: 4 \nQuestão 05: 5 "
            "\nQuestão 06: 6 \nQuestão 07: 7 \nQuestão 08: 8 \nQuestão 09: 9 \nQuestão 10: 10\n");
     printf("\nQuestão: ");
-    scanf("%d", questao);
+    scanf("%d", &questao);
 
     while ( FORA_ALCANCE ) {
 
