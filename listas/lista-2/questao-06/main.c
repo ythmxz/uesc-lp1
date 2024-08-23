@@ -12,7 +12,7 @@ b) Verifique o número de sorteios necessários para que sejam sorteados todos o
 por pelo menos 1 vez;
 
 c) Em uma quantidade grande de repetições (1 milhão ou mais, informada via argumento),
-quantas vezes cada valor foi sorteado;
+quantas vezes cada valor foi sorteado.
 */
 
 #include <stdio.h>
