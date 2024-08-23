@@ -18,6 +18,14 @@ int main() {
     printf("\nOperação: ");
     scanf("%d", &operacao);
 
+    if ( operacao < 1 || operacao > 4 ) {
+
+        printf("\nOperação inválida!\n");
+
+        return 1;
+
+    }
+
     printf("\nDigite o primeiro valor (inteiro): ");
     scanf("%d", &valorA);
 
@@ -31,21 +39,21 @@ int main() {
 
     }
 
-    if ( operacao == 2 ) {
+    else if ( operacao == 2 ) {
 
         resultado = valorA - valorB;
         printf("\n%d - %d = %d\n", valorA, valorB, resultado);
 
     }
 
-    if ( operacao == 3 ) {
+    else if ( operacao == 3 ) {
 
         resultado = valorA * valorB;
         printf("\n%d * %d = %d\n", valorA, valorB, resultado);
 
     }
 
-    if ( operacao == 4 ) {
+    else if ( operacao == 4 ) {
 
 
         if ( valorB == 0 ) {
@@ -71,4 +79,5 @@ int main() {
     }
 
     return 0;
+
 }
