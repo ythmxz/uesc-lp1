@@ -7,7 +7,7 @@ Exercício - Torre de Hanoi
 
 int main() {
 
-    int discos = 0;
+	int discos = 0;
 	int torres = 0;
 
 	printf("\nOlá, seja bem-vindo(a) a solução da Torre de Hanoi. Para começar,"
@@ -44,7 +44,7 @@ int main() {
 					"\nDisco 3 para Torre B; \nDisco 1 para Torre A; \nDisco 2 para Torre B; \nDisco 1 para Torre B.\n");
 			printf("\nAssim, completamos o desafio da Torre de Hanoi com 3 discos em 7 movimentos! Até a próxima.\n");
 
-        }
+		}
 
 		else if ( torres == 2 ) {
 

@@ -40,21 +40,21 @@ int main(int argc, char *argv[]) {
 
 			printf("\nO resultado do dado é %i!\n", resultado);
 
-		    break;
+			break;
 
 		case 2:
 
 			totalSorteios = sorteiosNecessarios(lados);
 
 			printf("\nSão necessários %i sorteios para que cada valor"
-                    " seja sorteado ao menos uma vez.\n", totalSorteios);
+					" seja sorteado ao menos uma vez.\n", totalSorteios);
 
-		    break;
+			break;
 
 		case 3:
 
 			quantidadeSorteios(lados, sorteios);
-		    break;
+			break;
 
 	}
 

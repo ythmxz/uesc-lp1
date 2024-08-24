@@ -12,6 +12,6 @@ de elementos iguais nas dimensões;
 
 int main() {
 
-    return 0;
+	return 0;
 
 }

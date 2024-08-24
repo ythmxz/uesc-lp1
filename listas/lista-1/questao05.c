@@ -31,6 +31,6 @@ int main() {
 
 	printf("\nAlgo deu errado! Tente novamente.\n");
 
-    return 0;
+	return 0;
 
 }

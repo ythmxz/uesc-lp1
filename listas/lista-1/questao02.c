@@ -31,19 +31,19 @@ formato numérico decimal, octal, hexadecimal e como caractere.
 
 int main() {
 
-    char caractere;
-    char maiusculo = 81, minusculo;
+	char caractere;
+	char maiusculo = 81, minusculo;
 	int verificacao = 0;
 
 	printf("\nDigite um caractere: ");
 	scanf("%c", &caractere);
 
 	verificacao = ( caractere >= 'A' && caractere <= 'Z' ) ? 1 :
-                  ( caractere >= 'a' && caractere <= 'z' ) ? 2 :
-                  ( caractere >= '0' && caractere <= '9' ) ? 3 : 0;
+					( caractere >= 'a' && caractere <= 'z' ) ? 2 :
+					( caractere >= '0' && caractere <= '9' ) ? 3 : 0;
 
 	verificacao == 1 ?
-        printf("\nEste caractere é uma letra maiúscula.\n") :
+		printf("\nEste caractere é uma letra maiúscula.\n") :
 
 	verificacao == 2 ?
 		printf("\nEste caractere é uma letra minúscula.\n") :
@@ -54,15 +54,15 @@ int main() {
 	printf("\nEste caractere não é uma letra nem um dígito.\n");
 
 	printf("\nCaractere 81 (maiúsculo):\n");
-    printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %X \nCaractere: %c\n"
-           , maiusculo, maiusculo, maiusculo, maiusculo);
+	printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %X \nCaractere: %c\n"
+			, maiusculo, maiusculo, maiusculo, maiusculo);
 
 	minusculo = maiusculo + ('a' - 'A');
 
 	printf("\nCaractere 81 (minúsculo):\n");
-    printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %x \nCaractere: %c\n"
-           , minusculo, minusculo, minusculo, minusculo);
+	printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %x \nCaractere: %c\n"
+			, minusculo, minusculo, minusculo, minusculo);
 
-    return 0;
+	return 0;
 
 }

@@ -14,7 +14,7 @@ void sorter();
 
 int main() {
 
-    setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "");
 
 	int x;
 
@@ -68,9 +68,9 @@ int main() {
 
 	return 0;
 
-}
+	}
 
-void sorter() {
+	void sorter() {
 
 	int x, y, r;
 	char aux[50];

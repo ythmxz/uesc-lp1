@@ -35,7 +35,7 @@ int main() {
 	scanf("%f", &pontoY);
 
 	( pontoX > 0 ) ?
-        printf("\nSeu ponto X está localizado à direita no plano cartesiano.\n") :
+		printf("\nSeu ponto X está localizado à direita no plano cartesiano.\n") :
 
 	( pontoX < 0 ) ?
 		printf("\nSeu ponto X está localizado à esquerda no plano cartesiano.\n") :
@@ -58,6 +58,6 @@ int main() {
 
 	printf("\nO produto entre os pontos %g e %g equivale a %e.\n", pontoX, pontoY, pontoZ);
 
-    return 0;
+	return 0;
 
 }

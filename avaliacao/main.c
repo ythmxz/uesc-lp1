@@ -79,7 +79,7 @@ int main() {
 	float necessarioFinal = 0.0, notaFinal = 0.0;
 	float nota[10], peso[10];
 
-    REPETE_CREDITOS:
+REPETE_CREDITOS:
 
 	printf("\nDigite a quantidade de créditos da matéria (%d a %d): ", minCreditos, maxCreditos);
 	scanf("%d", &totalCreditos);
@@ -118,7 +118,7 @@ int main() {
 
 	printf("\n------------------------------------------------------\n");
 
-    REPETE_FALTAS:
+REPETE_FALTAS:
 
 	printf("\nDigite a quantidade de faltas (%d a %d): ", minFaltas, maxFaltas);
 	scanf(" %d", &numFaltas);
@@ -134,12 +134,12 @@ int main() {
 	media = arredondamento(media);
 
 	printf("\n------------------------------------------------------\n");
-	
+
 	printf("\nFicha do Aluno:\n");
 
 	for ( int numNotas = 0; numNotas < totalNotas; numNotas += 1 )
 		printf("\nNota %d: \x1b[34m%-3.1f\x1b[0m | Peso: \x1b[34m%.1f\x1b[0m"
-                , (numNotas + 1), nota[numNotas], peso[numNotas]);
+				, (numNotas + 1), nota[numNotas], peso[numNotas]);
 
 	printf("\n\nMédia: \x1b[34m%.1f\x1b[0m\n", media);
 

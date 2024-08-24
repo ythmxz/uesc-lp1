@@ -19,6 +19,6 @@ Desenvolva um jogo de palavras-cruzadas. Tendo:
 
 int main() {
 
-    return 0;
+	return 0;
 
 }

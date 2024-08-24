@@ -17,6 +17,6 @@ Para arrays 3 dimensionais, desenvolva:
 
 int main() {
 
-    return 0;
+	return 0;
 
 }

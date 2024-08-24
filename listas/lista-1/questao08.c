@@ -14,26 +14,27 @@ Como fazer para lidar com o fato de que o usuário pode fornecer um número nega
 
 int main() {
 
-  int numeroPositivo = 0;
-  float resultadoSoma = 0.0;
+	int numeroPositivo = 0;
+	float resultadoSoma = 0.0;
 
-  TENTE_NOVAMENTE_2:
+TENTE_NOVAMENTE:
 
-  printf("\nDigite um número inteiro positivo: ");
-  scanf("%d", &numeroPositivo);
+	printf("\nDigite um número inteiro positivo: ");
+	scanf("%d", &numeroPositivo);
 
-  while ( numeroPositivo < 0 ) {
+	while ( numeroPositivo < 0 ) {
 
-      printf("\nValor incorreto! Tente novamente.");
+		printf("\nValor incorreto! Tente novamente.");
 
-      goto TENTE_NOVAMENTE_2;
+		goto TENTE_NOVAMENTE;
 
-  }
+	}
 
-  resultadoSoma = ((numeroPositivo * (1 + numeroPositivo) / 2));
+	resultadoSoma = ((numeroPositivo * (1 + numeroPositivo) / 2));
 
-  printf("\nO resultado da soma de todos os valores de 1 até %d é %g.\n", numeroPositivo, resultadoSoma);
+	printf("\nO resultado da soma de todos os valores de 1 até %d é %g.\n"
+			, numeroPositivo, resultadoSoma);
 
-    return 0;
+	return 0;
 
 }

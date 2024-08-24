@@ -26,8 +26,8 @@ int main() {
 	( numero > 2147483647 ) ?
 		printf("\nEste valor é maior que o intervalo dos int.\n") :
 
-    printf("\nAlgo deu errado! Tente novamente.\n");
+	printf("\nAlgo deu errado! Tente novamente.\n");
 
-    return 0;
+	return 0;
 
 }

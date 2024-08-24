@@ -46,38 +46,38 @@ int main(int argc, char *argv[]) {
 		case 1:
 
 			letraA(tecla);
-		    break;
+			break;
 
 		case 2:
 
 			letraB(sequencia);
-		    break;
+			break;
 
 		case 3:
 
 			letraC(sequencia);
-		    break;
+			break;
 
 		case 4:
 
 			letraD(sequencia);
-		    break;
+			break;
 
 		case 5:
 
 			letraE(primos);
-		    break;
+			break;
 
 		case 6:
 
 			letraF(perfeitos);
-		    break;
+			break;
 
 	}
 
 	return 0;
 
-}
+	}
 
 void letraA(char tecla) {
 
@@ -99,21 +99,21 @@ void letraA(char tecla) {
 	else
 		printf("\nVocê não digitou um número ou um caractere!\n");
 
-}
+	}
 
 void letraB(int sequencia) {
 
 	for ( int i = 0; i <= sequencia; i++ )
 		printf("%d\n", i);
 
-}
+	}
 
 void letraC(int sequencia) {
 
 	for ( int i = sequencia; i >= 0; i-- )
 		printf("%d\n", i);
 
-}
+	}
 
 void letraD(int sequencia) {
 
@@ -133,7 +133,7 @@ void letraD(int sequencia) {
 
 	}
 
-}
+	}
 
 void letraE(int primos) {
 
@@ -152,7 +152,7 @@ void letraE(int primos) {
 
 	}
 
-}
+	}
 
 void letraF(int perfeitos) {
 

@@ -36,7 +36,7 @@ int main() {
 
 	printf("\nSeja bem vindo ao cálculo do IRRF. Para começar, informe se deseja realizar o cálculo de:\n");
 
-    REPETE_PESSOA:
+REPETE_PESSOA:
 
 	printf("\n1 - PESSOA FÍSICA (PF) \n2 - PESSOA JURÍDICA (PJ)\n");
 	scanf("%d", &tipoPessoa);
@@ -44,7 +44,7 @@ int main() {
 		while ( tipoPessoa < 1 || tipoPessoa > 2 ) {
 
 			printf("\nValor incorreto! Tente novamente.\n");
-            goto REPETE_PESSOA;
+			goto REPETE_PESSOA;
 
 		}
 
@@ -56,7 +56,7 @@ int main() {
 
 			printf("\n[CRÉDITOS]\n");
 
-            REPETE_SALARIO:
+		REPETE_SALARIO:
 
 			printf("\n- Salário bruto: R$");
 			scanf("%lf", &salarioBruto);
@@ -64,11 +64,11 @@ int main() {
 			while ( salarioBruto < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_SALARIO;
+				goto REPETE_SALARIO;
 
 			}
 
-            REPETE_ALIMENTACAO:
+		REPETE_ALIMENTACAO:
 
 			printf("\n- Vale-alimentação (não tributável): R$");
 			scanf("%lf", &valeAlimentacao);
@@ -76,11 +76,11 @@ int main() {
 			while ( valeAlimentacao < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_ALIMENTACAO;
+				goto REPETE_ALIMENTACAO;
 
 			}
 
-            REPETE_TRANSPORTE:
+		REPETE_TRANSPORTE:
 
 			printf("\n- Vale-transporte (não tributável): R$");
 			scanf("%lf", &valeTransporte);
@@ -88,11 +88,11 @@ int main() {
 			while ( valeTransporte < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_TRANSPORTE;
+				goto REPETE_TRANSPORTE;
 
 			}
 
-            REPETE_CREDITOS:
+		REPETE_CREDITOS:
 
 			printf("\n- Créditos adicionais: R$");
 			scanf("%lf", &outrosCreditos);
@@ -100,13 +100,13 @@ int main() {
 			while ( outrosCreditos < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_CREDITOS;
+				goto REPETE_CREDITOS;
 
 			}
 
 			printf("\n[DÉBITOS]\n");
 
-            REPETE_PLANO_SAUDE:
+		REPETE_PLANO_SAUDE:
 
 			printf("\n- Plano de saúde: R$");
 			scanf("%lf", &planoSaude);
@@ -114,11 +114,11 @@ int main() {
 			while ( planoSaude < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_PLANO_SAUDE;
+				goto REPETE_PLANO_SAUDE;
 
 			}
 
-            REPETE_DEPENDENTES:
+		REPETE_DEPENDENTES:
 
 			printf("\n- Dependentes: ");
 			scanf("%d", &dependentes);
@@ -126,11 +126,11 @@ int main() {
 			while ( dependentes < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_DEPENDENTES;
+				goto REPETE_DEPENDENTES;
 
 			}
 
-            REPETE_PENSAO:
+		REPETE_PENSAO:
 
 			printf("\n- Pensão alimentícia: R$");
 			scanf("%lf", &pensao);
@@ -138,11 +138,11 @@ int main() {
 			while ( pensao < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_PENSAO;
+				goto REPETE_PENSAO;
 
 			}
 
-            REPETE_DEBITOS:
+		REPETE_DEBITOS:
 
 			printf("\n- Débitos adicionais: R$");
 			scanf("%lf", &outrosDebitos);
@@ -150,7 +150,7 @@ int main() {
 			while ( outrosDebitos < 0 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_DEBITOS;
+				goto REPETE_DEBITOS;
 
 			}
 
@@ -193,7 +193,7 @@ int main() {
 
 			printf("\nEscolha uma tabela de alíquotas:\n");
 
-            REPETE_TABELA:
+		REPETE_TABELA:
 
 			printf("\n1 - FEVEREIRO/2024 \n2 - CRIAR TABELA\n");
 			scanf("%d", &tabela);
@@ -201,7 +201,7 @@ int main() {
 			while ( tabela < 1 || tabela > 2 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_TABELA;
+				goto REPETE_TABELA;
 
 			}
 
@@ -219,13 +219,13 @@ int main() {
 					printf("\nFaixa 4 | R$%6.2lf a R$%6.2lf | 22.5%%    | R$%.2lf", faixa3 + 0.01, faixa4, deducao3);
 					printf("\nFaixa 5 | Acima de R$%6.2lf    | 27.5%%    | R$%.2lf\n", faixa4 + 0.01, deducao4);
 
-				    break;
+					break;
 
 				case 2:
 
 					printf("\n[FAIXAS]\n");
 
-                    REPETE_FAIXA_1:
+				REPETE_FAIXA_1:
 
 					printf("\n- Faixa 1: R$");
 					scanf("%lf", &faixa1);
@@ -233,11 +233,11 @@ int main() {
 					while ( faixa1 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_FAIXA_1;
+						goto REPETE_FAIXA_1;
 
 					}
 
-                    REPETE_FAIXA_2:
+				REPETE_FAIXA_2:
 
 					printf("\n- Faixa 2: R$");
 					scanf("%lf", &faixa2);
@@ -245,11 +245,11 @@ int main() {
 					while ( faixa2 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_FAIXA_2;
+						goto REPETE_FAIXA_2;
 
 					}
 
-                    REPETE_FAIXA_3:
+				REPETE_FAIXA_3:
 
 					printf("\n- Faixa 3: R$");
 					scanf("%lf", &faixa3);
@@ -257,11 +257,11 @@ int main() {
 					while ( faixa3 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_FAIXA_3;
+						goto REPETE_FAIXA_3;
 
 					}
 
-                    REPETE_FAIXA_4:
+				REPETE_FAIXA_4:
 
 					printf("\n- Faixa 4: R$");
 					scanf("%lf", &faixa4);
@@ -269,13 +269,13 @@ int main() {
 					while ( faixa4 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_FAIXA_4;
+						goto REPETE_FAIXA_4;
 
 					}
 
 					printf("\n[DEDUÇÕES]");
 
-                    REPETE_DEDUCAO_1:
+				REPETE_DEDUCAO_1:
 
 					printf("\n- Dedução 1: R$");
 					scanf("%lf", &deducao1);
@@ -283,11 +283,11 @@ int main() {
 					while ( deducao1 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_DEDUCAO_1;
+						goto REPETE_DEDUCAO_1;
 
 					}
 
-                    REPETE_DEDUCAO_2:
+				REPETE_DEDUCAO_2:
 
 					printf("\n- Dedução 2: R$");
 					scanf("%lf", &deducao2);
@@ -295,11 +295,11 @@ int main() {
 					while ( deducao2 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_DEDUCAO_2;
+						goto REPETE_DEDUCAO_2;
 
 					}
 
-                    REPETE_DEDUCAO_3:
+				REPETE_DEDUCAO_3:
 
 					printf("\n- Dedução 3: R$");
 					scanf("%lf", &deducao3);
@@ -307,11 +307,11 @@ int main() {
 					while ( deducao3 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_DEDUCAO_3;
+						goto REPETE_DEDUCAO_3;
 
 					}
 
-                    REPETE_DEDUCAO_4:
+				REPETE_DEDUCAO_4:
 
 					printf("\n- Dedução 4: R$");
 					scanf("%lf", &deducao4);
@@ -319,7 +319,7 @@ int main() {
 					while ( deducao4 < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_DEDUCAO_4;
+						goto REPETE_DEDUCAO_4;
 
 					}
 
@@ -330,12 +330,12 @@ int main() {
 					printf("\nFaixa 4 | R$%6.2lf a R$%6.2lf | 22.5%%    | R$%.2lf", faixa3 + 0.01, faixa4, deducao3);
 					printf("\nFaixa 5 | Acima de R$%6.2lf    | 27.5%%    | R$%.2lf\n", faixa4 + 0.01, deducao4);
 
-				    break;
+					break;
 
 				default:
 
 					printf("\nAlgo deu errado! Encerrando o programa.\n");
-				    return 1;
+					return 1;
 
 			}
 
@@ -387,13 +387,13 @@ int main() {
 
 			printf("\nSeu salário líquido será R$%.2lf!\n", salarioLiquido);
 
-		    break;
+			break;
 
 		case 2:
 
 			printf("\nEscolha qual tipo de imposto será calculado:\n");
 
-            REPETE_IMPOSTO:
+		REPETE_IMPOSTO:
 
 			printf("\n1 - Simples Nacional (MEIs, MEs e EPPs)"
 					"\n2 - Lucro Presumido (entre R$4 Mi a R$78 Mi / ano de faturamento)"
@@ -404,7 +404,7 @@ int main() {
 			while ( tipoImposto < 1 || tipoImposto > 4 ) {
 
 				printf("\nValor incorreto! Tente novamente.\n");
-                goto REPETE_IMPOSTO;
+				goto REPETE_IMPOSTO;
 
 			}
 
@@ -413,11 +413,11 @@ int main() {
 				case 1:
 
 					printf("\nSua tributação está inclusa no DAS. Procure mais informações.\n");
-				    break;
+					break;
 
 				case 2:
 
-                    REPETE_FATURAMENTO:
+				REPETE_FATURAMENTO:
 
 					printf("\n- Faturamento (trimestral): R$");
 					scanf("%lf", &faturamento);
@@ -425,13 +425,13 @@ int main() {
 					while ( faturamento < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_FATURAMENTO;
+						goto REPETE_FATURAMENTO;
 
 					}
 
 					printf("\nServiço prestado:\n");
 
-                    REPETE_SERVICO:
+				REPETE_SERVICO:
 
 					printf("\n1 - COMBUSTÍVEL (1.6%%) \n2 - TRANSPORTES (16%%*) \n3 - SERVIÇOS GERAIS (32%%) \n4 - COMÉRCIO (8%%)\n");
 					scanf("%d", &tipoServico);
@@ -439,7 +439,7 @@ int main() {
 					while ( tipoServico < 1 || tipoServico > 4 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_SERVICO;
+						goto REPETE_SERVICO;
 
 					}
 
@@ -463,11 +463,11 @@ int main() {
 					printf("\nCom base no seu faturamento trimestral de R$%.2lf a sua base de lucro é de "
 							"R$%.2lf e seu IRPJ trimestral será de R$%.2lf!\n", faturamento, baseLucro, totalImpostos);
 
-				    break;
+					break;
 
 				case 3:
 
-                    REPETE_RECEITA:
+				REPETE_RECEITA:
 
 					printf("\n- Receita (mensal): R$");
 					scanf("%lf", &receita);
@@ -475,11 +475,11 @@ int main() {
 					while ( receita < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_RECEITA;
+						goto REPETE_RECEITA;
 
 					}
 
-                    REPETE_DESPESAS:
+				REPETE_DESPESAS:
 
 					printf("\n- Despesas (mensal): R$");
 					scanf("%lf", &despesas);
@@ -487,7 +487,7 @@ int main() {
 					while ( despesas < 0 ) {
 
 						printf("\nValor incorreto! Tente novamente.\n");
-                        goto REPETE_DESPESAS;
+						goto REPETE_DESPESAS;
 
 					}
 
@@ -516,21 +516,21 @@ int main() {
 					printf("\nCom base no seu faturamento mensal de R$%.2lf "
 							"o seu IRPJ mensal será de R$%.2lf!\n", baseLucro, totalImpostos);
 
-				    break;
+					break;
 
 				case 4:
 
 					printf("\nProcure a Receita Federal para resolver sua situação tributária.\n");
-				    break;
+					break;
 
 			}
 
-		    break;
+			break;
 
 		default:
 
 			printf("\nAlgo deu errado! Encerrando o programa.\n");
-		    return 1;
+			return 1;
 
 	}
 

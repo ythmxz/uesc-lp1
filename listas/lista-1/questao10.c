@@ -35,6 +35,6 @@ int main() {
 
 	printf("\nA área deste quadrado equivale a %g m².\n", area);
 
-    return 0;
+	return 0;
 
 }

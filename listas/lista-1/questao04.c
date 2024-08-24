@@ -38,6 +38,6 @@ int main() {
 
 	printf("\nDecimal: %d \nOctal: %o \nHexadecimal: %x \nCaractere: %c\n", numero, numero, numero, numero);
 
-    return 0;
+	return 0;
 
 }
