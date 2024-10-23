@@ -54,7 +54,7 @@ REPETE_PESSOA:
 
 			printf("\nPrimeiro, precisamos de algumas informações financeiras:\n");
 
-			printf("\n[CRÉDITOS]\n");
+			printf("\n\x1b[0;32m[CRÉDITOS]\x1b[0;0m\n");
 
 		REPETE_SALARIO:
 
