@@ -73,17 +73,14 @@ int main() {
 	for ( int i = (tamanhoArray - 1); i >= (tamanhoArray - 3); i-- )
 		printf("\nArray [%d] = %d", i, array[i]);
 
-		printf("\n\nTrês menores valores:\n");
+	printf("\n\nTrês menores valores:\n");
 
-		for ( int j = 0; j < 3; j++ )
+	for ( int j = 0; j < 3; j++ )
 		printf("\nArray [%d] = %d", j, array[j]);
 
 	printf("\n\nMédia: %g", calcularMedia(array, tamanhoArray));
 	printf("\nMediana: %g", calcularMediana(array, tamanhoArray));
 	printf("\nDesvio Padrão: %g\n\n", calcularDesvioPadrao(array, tamanhoArray));
-
-	//for ( int i = 0; i < tamanhoArray; i++ )
-		//printf("\nArray [%d] = %d", i, array[i]);
 
 	return 0;
 
