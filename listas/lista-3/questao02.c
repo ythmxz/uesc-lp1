@@ -34,10 +34,14 @@ float calcularMedia(unsigned int array[], int tamanhoArray);
 float calcularMediana(unsigned int array[], int tamanhoArray);
 float calcularDesvioPadrao(unsigned int array[], int tamanhoArray);
 
+int calcularNovoTamanho(unsigned int array[], int tamanhoArray);
+
 int main() {
 
 	int temp = 0;
+	int indice = 0;
 	int tamanhoArray = 10000;
+	int tamanhoNovoArray = 0;
 	int minimo = 0, maximo = 1000;
 
 	int numeroAleatorio = 0;
@@ -52,9 +56,9 @@ int main() {
 
 	}
 
-	for ( int i = 0; i <= (tamanhoArray - 1); i++ ) {
+	for ( int i = 1; i < tamanhoArray; i++ ) {
 
-		for ( int j = 0; j <= (tamanhoArray - i); j++ ) {
+		for ( int j = 0; j < (tamanhoArray - i); j++ ) {
 
 			if ( array[j] > array[j + 1] ) {
 
@@ -68,6 +72,8 @@ int main() {
 
 	}
 
+	printf("\nArray [%d]\n", tamanhoArray);
+
 	printf("\nTrês maiores valores:\n");
 
 	for ( int i = (tamanhoArray - 1); i >= (tamanhoArray - 3); i-- )
@@ -80,11 +86,47 @@ int main() {
 
 	printf("\n\nMédia: %g", calcularMedia(array, tamanhoArray));
 	printf("\nMediana: %g", calcularMediana(array, tamanhoArray));
-	printf("\nDesvio Padrão: %g\n\n", calcularDesvioPadrao(array, tamanhoArray));
+	printf("\nDesvio Padrão: %g\n", calcularDesvioPadrao(array, tamanhoArray));
+
+	printf("\nEliminando duplicatas...\n");
+
+	tamanhoNovoArray = calcularNovoTamanho(array, tamanhoArray);
+
+	int novoArray[tamanhoNovoArray];
+
+	for (int i = 0; i < tamanhoArray; i++) {
+
+		if (array[i] == array[i + 1])
+			continue;
+		else {
+
+			novoArray[indice] = array[i];
+			indice++;
+
+		}
+
+	}
+
+	printf("\nNovo Array [%d]\n", tamanhoNovoArray);
+
+	printf("\nTrês maiores valores:\n");
+
+	for ( int i = (tamanhoNovoArray - 1); i >= (tamanhoNovoArray - 3); i-- )
+		printf("\nArray [%d] = %d", i, novoArray[i]);
+
+	printf("\n\nTrês menores valores:\n");
+
+	for ( int j = 0; j < 3; j++ )
+		printf("\nArray [%d] = %d", j, novoArray[j]);
+
+	printf("\n\nMédia: %g", calcularMedia(novoArray, tamanhoNovoArray));
+	printf("\nMediana: %g", calcularMediana(novoArray, tamanhoNovoArray));
+	printf("\nDesvio Padrão: %g\n\n", calcularDesvioPadrao(novoArray, tamanhoNovoArray));
 
 	return 0;
 
 }
+
 
 float calcularMedia(unsigned int array[], int tamanhoArray) {
 
@@ -97,9 +139,13 @@ float calcularMedia(unsigned int array[], int tamanhoArray) {
 
 }
 
+
 float calcularMediana(unsigned int array[], int tamanhoArray) {
 
-	return (((tamanhoArray / 2) + ((tamanhoArray / 2) + 1)) / 2);
+	if ((tamanhoArray % 2) == 0)
+		return (((tamanhoArray / 2) + ((tamanhoArray / 2) + 1)) / 2);
+	else
+		return ((tamanhoArray / 2) + 1);
 
 }
 
@@ -121,6 +167,25 @@ float calcularDesvioPadrao(unsigned int array[], int tamanhoArray) {
 
 	variancia = (soma / 10);
 
-	return ( sqrtf(variancia) );
+	return (sqrtf(variancia));
+
+}
+
+
+int calcularNovoTamanho(unsigned int array[], int tamanhoArray) {
+
+	int tamanho = 0;
+
+	for ( int i = 0; i < tamanhoArray; i++ ) {
+
+		if ( array[i] == array[i + 1] )
+			continue;
+
+		else
+			tamanho++;
+
+	}
+
+	return tamanho;
 
 }
